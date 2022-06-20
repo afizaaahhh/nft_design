@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/Smileyduckies.jpg" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"/>
+  <title>Home</title>
+</head>
+<script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+<body>
+  <nav
+    class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 ">
+    <div
+      class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div
+        class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <img class="h-10 inline"
+        src="https://i.pinimg.com/736x/e9/e2/78/e9e2787d0cb55d570fe1c76843506759.jpg" alt="">
+        <a
+          class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black pr-10"
+          href="home.html"
+          >COMPANY NAME
+        </a>
+        <button
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button"
+          onclick="toggleNavbar('example-collapse-navbar')">
+          <i class="text-black fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Search bar -->
+      <form
+        class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3 w-1/2">
+        <div class="relative flex w-full flex-wrap items-stretch">
+          <span
+            class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-2"
+            ><i class="fas fa-search"></i
+          ></span>
+          <input
+            type="text"
+            placeholder="Search here..."
+            class="border-0 px-3 py-2 placeholder-blueGray-300 text-blueGray-600 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:ring w-full pl-10"
+          />
+        </div>
+      </form>
+      <div
+        class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+        id="example-collapse-navbar">
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <li class="flex items-center">
+            <a
+              class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#"
+              >Explore
+            </a>
+          </li>
+          <li class="flex items-center">
+            <a
+              class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#"
+              >Stats
+            </a>
+          </li>
+          <li class="flex items-center">
+            <a
+              class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#"
+              >Resources
+            </a>
+          </li>
+          <li class="flex items-center">
+            <a
+              class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#"
+              >Create
+            </a>
+          </li>
+          <li class="flex items-center">
+            <a
+              class="lg:text-black lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#" onClick="window.open('login.html');"
+              ><i
+                class="lg:text-black-300 text-black-500 fas fa-user-circle text-lg leading-lg "
+              ></i
+              ><span class="lg:hidden inline-block ml-2">Profile</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End navbar  -->
+
+  <main>
+    <div 
+      class="relative pt-16 pb-32 flex content-center items-center justify-center"
+      style="min-height: 75vh;">
+      <div
+        class="absolute top-0 w-full h-full bg-center bg-cover"
+        style='background-image: url("https://i.pinimg.com/564x/c2/c2/8f/c2c28fe9ad959e4c9575696d65563ba1.jpg");'>
+        <span
+          id="blackOverlay"
+          class="w-full h-full absolute opacity-75 bg-black">
+        </span>
+      </div>
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <h1 class="text-white font-semibold text-5xl">
+                Enabling digital asset scalability on Ethereum
+              </h1>
+              <p class="mt-4 text-lg text-gray-300">
+                CN is the world's first and largest NFT marketplace
+              </p>
+            </div>
+            <div class="mt-10">
+              <button
+                class="bg-pink-500 active:bg-pink-800 uppercase text-white hover:shadow-xl shadow text-md px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1">
+                Create
+              </button>
+            </div>
+          </div>            
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <footer class="relative bg-gray-300 pt-8 pb-6">
+    <div
+      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px;">
+      <svg
+        class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
+      >
+        <polygon
+          class="text-gray-300 fill-current"
+          points="2560 0 2560 100 0 100"
+        ></polygon>
+      </svg>
+    </div>
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl font-semibold">Join the community!</h4>
+          <div class="mt-6">
+            <!-- twitter  -->
+            <button
+              class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button">
+              <i class="flex fab fa-twitter"></i>
+            </button>
+            <!-- discord  -->
+            <button
+              class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button">
+              <i class="flex fab fa-brands fa-discord"></i>
+            </button>
+            <!-- instagram  -->
+            <button
+              class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button">
+              <i class="flex fab fa-brands fa-instagram"></i>
+            </button>
+            <!-- youtube  -->
+            <button
+              class="bg-white text-red-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button">
+              <i class="flex fab fa-brands fa-youtube"></i>
+            </button>
+            <!-- tiktok  -->
+            <button
+              class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button">
+              <i class="flex fab fa-brands fa-tiktok"></i>
+            </button>
+            <!-- reddit  -->
+            <button
+              class="bg-white text-orange-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button">
+              <i class="flex fab fa-brands fa-reddit-alien"></i>
+            </button>
+          </div>
+        </div>
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span
+                class="block uppercase text-gray-600 text-sm font-semibold mb-2">Company</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">About</a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">Careers</a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">Ventures
+                    </a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">Grants
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span
+                class="block uppercase text-gray-600 text-sm font-semibold mb-2">My Account</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">Profile</a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">Favorites</a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">
+                    My Collection
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">
+                    Settings
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full lg:w-4/12 px-4">
+              <span
+                class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                >Other Resources</span
+              >
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">MIT License</a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">
+                    Terms &amp; Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">
+                    Privacy Policy</a>
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="#">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-400" />
+      <div
+        class="flex flex-wrap items-center md:justify-between justify-center"
+      >
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-600 font-semibold py-1">
+            Copyright © 2022 NFT COMPANY by
+            <a
+              href="#"
+              class="text-gray-600 hover:text-gray-900"
+              >Company Name</a
+            >.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
